@@ -50,7 +50,7 @@
 
 ### 📂 File
 
-📄 Cybersecurity_Lab_Build_Report_Task2_VikasBhati.pdf
+📄 Cybersecurity_Lab_Build_Report_Task2_TeliVikas.pdf
 
 ---
 
@@ -59,10 +59,10 @@
 ```text
 MainCraftsProjects/
 ├── Week1/
-│   ├── Cybersecurity_Threat_Report_Task1.pdf
+│   ├── Cybersecurity_Threat_Report_Task1_[Teli Vikas]
 │   └── README.md
 ├── Week2/
-│   ├── Cybersecurity_Lab_Build_Report_Task2.pdf
+│   ├── Cybersecurity_Lab_Build_Report_Task2_TeliVikas.pdf
 │   └── README.md
 └── README.md
 ```
@@ -72,7 +72,7 @@ MainCraftsProjects/
 ## 🔗 Connect
 
 * 🌐 Organization: Maincrafts Technology
-* 💼 LinkedIn: https://www.linkedin.com/in/unknownx45/
+* 💼 LinkedIn: https://www.linkedin.com/in/vikas-teli/
 * 🐙 GitHub: https://github.com/vikas-cybersec
 
 ---
