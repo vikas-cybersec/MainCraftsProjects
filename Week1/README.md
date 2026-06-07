@@ -236,7 +236,7 @@ Future cybersecurity areas highlighted in this report include:
 
 # ⭐ Acknowledgment
 
-I sincerely thank **Maincrafts Technology** for providing me the opportunity to work on cybersecurity research and enhance my practical understanding of modern cyber threats.
+I sincerely thank **Maincrafts Technology** for providing me with the opportunity to gain practical cybersecurity experience and build a professional cybersecurity lab environment for hands-on learning.
 
 ---
 
@@ -248,13 +248,10 @@ Cybersecurity Analyst Intern
 
 ### 📫 Connect With Me
 
-* GitHub:https://github.com/vikas-cybersec
+* GitHub: https://github.com/vikas-cybersec
 * LinkedIn: https://www.linkedin.com/in/vikas-teli/
 
 ---
 
-<div align="center">
-
 ### ⭐ If you found this project useful, consider giving it a star!
 
-</div>
