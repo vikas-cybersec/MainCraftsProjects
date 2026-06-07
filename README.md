@@ -188,12 +188,6 @@ MainCraftsProjects/
 │   ├── Cybersecurity_Lab_Build_Report_Task2_VikasTeli.pdf
 │   └── README.md
 │
-└── Screenshots/
-    ├── Kali_VM.png
-    ├── JuiceShop.png
-    ├── BurpSuite.png
-    └── Wireshark.png
-```
 
 ---
 
