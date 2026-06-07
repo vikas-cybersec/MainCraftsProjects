@@ -1,19 +1,15 @@
-# 🔐 🔐 Cybersecurity Internship — Maincrafts Technology 
+# 🔐 Cybersecurity Internship — Maincrafts Technology
 
-<div align="center">
-
-![Cybersecurity](https://img.shields.io/badge/Cybersecurity-Threat%20Intelligence-blue?style=for-the-badge\&logo=hackaday)
-![Status](https://img.shields.io/badge/Task-Completed-success?style=for-the-badge)
-![Internship](https://img.shields.io/badge/Maincrafts-Technology-orange?style=for-the-badge)
-![Role](https://img.shields.io/badge/Role-Cybersecurity%20Analyst-red?style=for-the-badge)
-
-</div>
+![Cybersecurity](https://img.shields.io/badge/Cybersecurity-Intern-blue)
+![Kali Linux](https://img.shields.io/badge/Kali-Linux-success)
+![VMware](https://img.shields.io/badge/VMware-Lab-orange)
+![Docker](https://img.shields.io/badge/Docker-Container-blue)
 
 ---
 
 # 👨‍💻 Internship Details
 
-* **Intern Name:** Teli Vikas
+* **Intern Name:** Vikas Teli
 * **Role:** Cybersecurity Analyst Intern
 * **Organization:** Maincrafts Technology
 * **Duration:** 2 Weeks Internship
@@ -23,22 +19,19 @@
 
 # 📖 Project Overview
 
-This repository contains my **Cybersecurity Threat Intelligence Report** created during my internship at Maincrafts Technology.
+This repository contains the cybersecurity tasks completed during my internship at Maincrafts Technology.
 
-The report focuses on analyzing modern cybersecurity threats affecting organizations worldwide during **2024–2025**. It includes:
-
-* Threat Analysis
-* Real-world Case Studies
-* Attack Impact Assessment
-* Risk Evaluation
-* Security Recommendations
-* Defense Strategies
-
-The objective of this task was to understand evolving cyber threats and explore effective mitigation techniques used by cybersecurity professionals.
+The project focuses on modern cybersecurity threats, threat intelligence, cybersecurity lab setup, and practical security testing environments. Through this internship, I gained hands-on experience in cybersecurity research, network analysis, vulnerability assessment, and defensive security practices.
 
 ---
 
-# 🚨 Threats Analyzed
+# 🚨 Task 1 — Cybersecurity Threat Intelligence Report
+
+## 🎯 Objective
+
+Analyze the most significant cybersecurity threats affecting organizations worldwide during 2024–2025 and recommend appropriate mitigation strategies.
+
+### Threats Analyzed
 
 | # | Threat                           | Severity    | Trend    |
 | - | -------------------------------- | ----------- | -------- |
@@ -48,126 +41,124 @@ The objective of this task was to understand evolving cyber threats and explore 
 | 4 | IoT Vulnerabilities              | 🟠 High     | ↑ Rising |
 | 5 | Zero-Day Exploits                | 🔴 Critical | ↑ Rising |
 
----
+### Key Topics Covered
 
-# 🧠 1. AI-Powered Phishing Attacks
+* Threat Intelligence
+* Risk Assessment
+* Real-World Case Studies
+* Attack Impact Analysis
+* Security Recommendations
+* Defense Strategies
+* Emerging Threat Landscape
 
-### 🔍 Description
+### 📂 File
 
-Artificial Intelligence and Large Language Models (LLMs) are enabling attackers to create highly personalized phishing campaigns and deepfake-based scams.
-
-### 📌 Real-World Case Study
-
-**MGM Resorts Deepfake Vishing Attack (2023)**
-
-### 💥 Impact
-
-* Financial losses
-* Credential theft
-* Operational disruption
-* Social engineering attacks
-
-### 🛡️ Defense Strategies
-
-* Multi-Factor Authentication (MFA)
-* Security Awareness Training
-* Email Security Solutions
-* Zero Trust Architecture
+📄 Cybersecurity_Threat_Report_Task1_VikasTeli.pdf
 
 ---
 
-# 💀 2. Ransomware-as-a-Service (RaaS)
+# 🧪 Task 2 — Personal Cybersecurity Lab Build
 
-### 🔍 Description
+## 🎯 Objective
 
-Cybercriminal groups provide ransomware kits and infrastructure to affiliates, making ransomware attacks more accessible.
-
-### 📌 Real-World Case Study
-
-**Change Healthcare Attack (2024)**
-
-### 💥 Impact
-
-* System encryption
-* Data theft
-* Service disruption
-* Financial damage
-
-### 🛡️ Defense Strategies
-
-* Immutable Backups
-* Endpoint Detection & Response (EDR)
-* Patch Management
-* Network Segmentation
+Build a safe and fully isolated personal cybersecurity practice environment to serve as the foundation for future hands-on cybersecurity tasks.
 
 ---
 
-# ☁️ 3. Cloud Security Misconfigurations
+## 🖥️ Lab Architecture
 
-### 🔍 Description
-
-Misconfigured cloud environments expose sensitive organizational data due to insecure storage and excessive permissions.
-
-### 📌 Real-World Case Study
-
-**Microsoft Power Apps Data Exposure**
-
-### 🛡️ Defense Strategies
-
-* Cloud Security Posture Management (CSPM)
-* Least Privilege Principle
-* Secure IAM Configuration
-* Infrastructure-as-Code (IaC) Scanning
-
----
-
-# 📡 4. IoT Vulnerabilities
-
-### 🔍 Description
-
-Internet of Things (IoT) devices often lack strong security mechanisms and become easy targets for attackers.
-
-### 📌 Real-World Case Study
-
-**Mirai Botnet Attack**
-
-### 💥 Impact
-
-* Massive DDoS attacks
-* Internet outages
-* Device compromise
-
-### 🛡️ Defense Strategies
-
-* Change Default Credentials
-* Firmware Updates
-* IoT Network Segmentation
-* Device Monitoring
+```text
++--------------------------------------------------+
+|           Host System — Windows 10 x64           |
+|                                                  |
+|   └── VMware Workstation                         |
+|         ├── Kali Linux VM (Attacker)             |
+|         └── OWASP Juice Shop via Docker (Target) |
+|                                                  |
+|   Networks:                                      |
+|     • VMnet8 NAT       → Internet / Updates      |
+|     • VMnet1 Host-Only → Isolated Lab Traffic    |
++--------------------------------------------------+
+```
 
 ---
 
-# 🔓 5. Zero-Day Exploits
+## ⚙️ Lab Components
 
-### 🔍 Description
+| Component          | Details                               |
+| ------------------ | ------------------------------------- |
+| Host OS            | Windows 10 x64                        |
+| Hypervisor         | VMware Workstation                    |
+| Attacker VM        | Kali Linux (64-bit, 4GB RAM, 8 vCPUs) |
+| Target Application | OWASP Juice Shop                      |
+| Deployment Method  | Docker Container                      |
+| Network 1          | VMnet8 — NAT                          |
+| Network 2          | VMnet1 — Host-Only                    |
+| Target URL         | http://localhost:3000                 |
 
-Zero-day vulnerabilities are unknown software flaws exploited before developers release security patches.
+---
 
-### 📌 Real-World Case Study
+## ✅ Evidence Collected
 
-**MOVEit Transfer Zero-Day (CVE-2023-34362)**
+| # | Evidence Item                                   | Status     |
+| - | ----------------------------------------------- | ---------- |
+| 1 | VMware Virtual Network Editor (NAT + Host-Only) | ✅ Verified |
+| 2 | Kali Linux Setup and Updates                    | ✅ Verified |
+| 3 | Docker Installation and Configuration           | ✅ Verified |
+| 4 | OWASP Juice Shop Deployment                     | ✅ Verified |
+| 5 | Dual Network Configuration                      | ✅ Verified |
+| 6 | Nmap Host Discovery Scan                        | ✅ Verified |
+| 7 | Burp Suite HTTP Interception                    | ✅ Verified |
+| 8 | Wireshark Packet Capture                        | ✅ Verified |
 
-### 💥 Impact
+---
 
-* Data breaches
-* Large-scale compromise
-* Supply chain attacks
+## 🛠️ Tools Validated
 
-### 🛡️ Defense Strategies
+### Nmap v7.95
 
-* Behavioral EDR/XDR
-* WAF & IPS Protection
-* Threat Intelligence Integration
-* Attack Surface Reduction
+* Network Discovery
+* Host Enumeration
+* Port Scanning
+
+### Burp Suite Community
+
+* HTTP Interception
+* Proxy Analysis
+* Web Application Testing
+
+### Wireshark
+
+* Packet Capture
+* Traffic Analysis
+* Protocol Inspection
+
+### Docker
+
+* Container Deployment
+* Application Isolation
+* Service Management
+
+---
+
+## 🔧 Technical Skills Demonstrated
+
+* VMware Virtualization
+* Linux Administration
+* Docker Containerization
+* Network Configuration
+* Nmap Scanning
+* Burp Suite Usage
+* Wireshark Analysis
+* Cybersecurity Lab Design
+* Web Application Security Testing
+* Network Traffic Monitoring
+
+---
+
+## 📂 File
+
+📄 Cybersecurity_Lab_Build_Report_Task2_VikasTeli.pdf
 
 ---
 
@@ -184,156 +175,87 @@ Zero-day vulnerabilities are unknown software flaws exploited before developers 
 
 # 📁 Repository Structure
 
-```bash id="9lcpj9"
-Cybersecurity-Internship/
+```text
+MainCraftsProjects/
 │
 ├── README.md
 │
-├── Task-1/
-│   └── Cybersecurity_Threat_Report_Task1_[Teli Vikas].pdf
+├── Week1/
+│   ├── Cybersecurity_Threat_Report_Task1_VikasTeli.pdf
+│   └── README.md
+│
+├── Week2/
+│   ├── Cybersecurity_Lab_Build_Report_Task2_VikasTeli.pdf
+│   └── README.md
+│
+└── Screenshots/
+    ├── Kali_VM.png
+    ├── JuiceShop.png
+    ├── BurpSuite.png
+    └── Wireshark.png
 ```
 
 ---
 
-# 🛠️ Skills Gained
+# 🎯 Skills Gained
 
-During this task, I improved my understanding of:
-
-* Threat Intelligence
-* Cybersecurity Research
+* Cyber Threat Intelligence
 * Risk Assessment
+* Security Research
 * Incident Analysis
 * Security Documentation
-* Defensive Cybersecurity Strategies
-* Real-World Attack Analysis
+* Linux Administration
+* Network Security
+* Vulnerability Assessment
+* Security Monitoring
+* Practical Cybersecurity Operations
 
 ---
 
-# 🔭 Future Scope
+# 🔭 Future Learning Areas
 
-Future cybersecurity areas highlighted in this report include:
-
-* 🤖 AI vs AI Cyber Warfare
-* 🔐 Post-Quantum Cryptography
-* 🎭 Deepfake Fraud
-* ⚡ Critical Infrastructure Attacks
-* 🌐 Nation-State Cyber Threats
+* AI-Powered Security Operations
+* Threat Hunting
+* Cloud Security
+* Malware Analysis
+* Digital Forensics
+* Security Operations Center (SOC)
+* Penetration Testing
+* Advanced Network Defense
 
 ---
 
 # 📚 References
 
-* IBM Security — Cost of a Data Breach Report 2024
+* IBM Security Cost of a Data Breach Report 2024
 * CISA Cybersecurity Advisories
 * Sophos State of Ransomware 2024
 * OWASP Top 10
 * MITRE ATT&CK Framework
 * Verizon DBIR 2024
 * Cloudflare DDoS Threat Report 2024
-* NIST Post-Quantum Cryptography Standards
-
----
-
-## 🧪 Task 2 — Personal Cybersecurity Lab Build
-
-**Objective:** Build a safe and fully isolated personal cybersecurity practice environment to serve as the foundation for all future hands-on tasks.
-
-### 🖥️ Lab Architecture
-
-```text
-+--------------------------------------------------+
-|           Host System — Windows 10 x64           |
-|                                                  |
-|   └── VMware Workstation                         |
-|         ├── Kali Linux VM (Attacker)             |
-|         └── OWASP Juice Shop via Docker (Target) |
-|                                                  |
-|   Networks:                                      |
-|     • VMnet8 NAT       → Internet / Updates      |
-|     • VMnet1 Host-Only → Isolated Lab Traffic    |
-+--------------------------------------------------+
-```
-
-### ⚙️ Lab Components
-
-| Component   | Details                                   |
-| ----------- | ----------------------------------------- |
-| Host OS     | Windows 10 x64                            |
-| Hypervisor  | VMware Workstation                        |
-| Attacker VM | Kali Linux (64-bit, 4GB RAM, 8 vCPUs)     |
-| Target App  | OWASP Juice Shop via Docker               |
-| Target URL  | http://localhost:3000                     |
-| Network 1   | VMnet8 — NAT (internet access)            |
-| Network 2   | VMnet1 — Host-Only (isolated lab traffic) |
-
-### ✅ Evidence Collected
-
-1. VMware Virtual Network Editor (NAT + Host-Only) — Verified
-2. Kali Linux VM — apt update/upgrade + lab folders — Verified
-3. Docker installation and service enabled — Verified
-4. OWASP Juice Shop running at localhost:3000 — Verified
-5. Dual IP configuration (NAT + Host-Only) — Verified
-6. Nmap scan — hosts discovered on Host-Only subnet — Verified
-7. Burp Suite intercepting HTTP traffic from Juice Shop — Verified
-8. Wireshark capturing live packets — Verified
-
-### 🛠️ Tools Validated
-
-* Nmap v7.95 — Network discovery and host scanning
-* Burp Suite Community — HTTP interception and proxy
-* Wireshark — Live packet capture and analysis
-* Docker — Container deployment and management
-
-### 📂 File
-
-📄 Cybersecurity_Lab_Build_Report_Task2_TeliVikas.pdf
-
----
-
-## 🗂️ Repository Structure
-
-```text
-MainCraftsProjects/
-├── Week1/
-│   ├── Cybersecurity_Threat_Report_Task1_[Teli Vikas]
-│   └── README.md
-├── Week2/
-│   ├── Cybersecurity_Lab_Build_Report_Task2_TeliVikas.pdf
-│   └── README.md
-└── README.md
-```
-
----
-
-## 🔗 Connect
-
-* 🌐 Organization: Maincrafts Technology
-* 💼 LinkedIn: https://www.linkedin.com/in/vikas-teli/
-* 🐙 GitHub: https://github.com/vikas-cybersec
+* NIST Cybersecurity Framework
 
 ---
 
 # ⭐ Acknowledgment
 
-I sincerely thank **Maincrafts Technology** for providing me the opportunity to work on cybersecurity research and enhance my practical understanding of modern cyber threats.
+I sincerely thank **Maincrafts Technology** for providing me with the opportunity to gain practical cybersecurity experience and strengthen my understanding of modern cyber threats, defensive security practices, and cybersecurity operations.
 
 ---
 
 # 👨‍💻 Author
 
-## Teli Vikas
+## Vikas Teli
 
-Cybersecurity Analyst Intern
+**B.Tech Computer Science & Engineering (Cyber Security)**
+Silver Oak University, Ahmedabad
 
 ### 📫 Connect With Me
 
-* GitHub:https://github.com/vikas-cybersec
+* GitHub: https://github.com/vikas-cybersec
 * LinkedIn: https://www.linkedin.com/in/vikas-teli/
 
 ---
 
-<div align="center">
-
 ### ⭐ If you found this project useful, consider giving it a star!
-
-</div>
